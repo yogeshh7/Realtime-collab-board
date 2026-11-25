@@ -56,7 +56,7 @@ graph LR
 2. **Configure environment variables**
    ```bash
    cp .env.example server/.env
-   # Add your MONGODB_URI and OPENAI_API_KEY inside server/.env
+
    ```
 
 3. **Run the Backend Server**
