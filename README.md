@@ -24,15 +24,7 @@ When a user enters a plain-English command (e.g., *"Move all finished tasks to D
 
 ---
 
-## System Architecture
 
-```mermaid
-graph LR
-  A[React + TS Client 1] <-->|WebSocket Binary Sync| C[Node/TS Yjs Server]
-  B[React + TS Client 2] <-->|WebSocket Binary Sync| C
-  C -->|Debounced Snapshots| D[(MongoDB Atlas)]
-  C <-->|Zod-Validated JSON Mutations| E[AI Co-Pilot LLM]
-```
 
 ---
 
