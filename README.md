@@ -1,4 +1,4 @@
-# Realtime Collab Board 🚀
+# Realtime Collab Board 
 
 An AI-native, real-time multiplayer Kanban workspace built with **React, TypeScript, Yjs (CRDTs), WebSockets, and MongoDB**. 
 
@@ -6,7 +6,7 @@ Instead of a passive sidebar chatbot, the embedded **AI Co-Pilot** acts as a rea
 
 ---
 
-## 🤖 How the AI Co-Pilot Works
+##  How the AI Co-Pilot Works
 
 When a user enters a plain-English command (e.g., *"Move all finished tasks to Done and split the Auth task into 3 steps"*), the co-pilot executes through four engineering layers:
 
@@ -17,14 +17,14 @@ When a user enters a plain-English command (e.g., *"Move all finished tasks to D
 
 ---
 
-## ✨ Key System Highlights
+## Key System Highlights
 
 * **Conflict-Free Real-Time Sync (CRDTs):** Powered by **Yjs** over WebSockets for sub-50ms state synchronization, offline resilience, and live multiplayer cursor awareness.
 * **Debounced MongoDB Persistence:** Automatically serializes binary Yjs snapshots (`Y.encodeStateAsUpdate`) into MongoDB Atlas without blocking real-time WebSocket throughput.
 
 ---
 
-## 🏗️ System Architecture
+## System Architecture
 
 ```mermaid
 graph LR
